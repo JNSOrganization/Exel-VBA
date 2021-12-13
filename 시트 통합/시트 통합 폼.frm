@@ -1,12 +1,12 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} UserForm1 
-   Caption         =   "ì‹œíŠ¸ í†µí•©"
+   Caption         =   "½ÃÆ® ÅëÇÕ"
    ClientHeight    =   5205
    ClientLeft      =   120
    ClientTop       =   465
    ClientWidth     =   7140
-   OleObjectBlob   =   "ì‹œíŠ¸ í†µí•© í¼.frx":0000
-   StartUpPosition =   1  'ì†Œìœ ì ê°€ìš´ë°
+   OleObjectBlob   =   "½ÃÆ® ÅëÇÕ Æû.frx":0000
+   StartUpPosition =   1  '¼ÒÀ¯ÀÚ °¡¿îµ¥
 End
 Attribute VB_Name = "UserForm1"
 Attribute VB_GlobalNameSpace = False
@@ -28,7 +28,7 @@ For j = 0 To Sheets.Count - 1
     Next j
 
 If SheetName = "" Then
-    MsgBox "í†µí•© ë°ì´í„° ì €ì¥ ì‹œíŠ¸ë¥¼ ì§€ì •í•˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤."
+    MsgBox "ÅëÇÕ µ¥ÀÌÅÍ ÀúÀå ½ÃÆ®¸¦ ÁöÁ¤ÇÏÁö ¾Ê¾Ò½À´Ï´Ù."
     End
 
 End If
@@ -49,11 +49,11 @@ Private Sub TextBox1_KeyPress(ByVal KeyAscii As MSForms.ReturnInteger)
 
 If Chr(KeyAscii) < "0" Or Chr(KeyAscii) > "9" Then
 
-If (KeyAscii = 8) Then 'ë‹¨ ë°±ìŠ¤í˜ì´ìŠ¤í‚¤ë¥¼ ëˆ„ë¥´ë©´ ì•„ë¬´ ì˜í–¥ì´ ì—†ë‹¤.
+If (KeyAscii = 8) Then '´Ü ¹é½ºÆäÀÌ½ºÅ°¸¦ ´©¸£¸é ¾Æ¹« ¿µÇâÀÌ ¾ø´Ù.
 
 Else
 
-MsgBox "ìˆ«ìë§Œ ì…ë ¥í•˜ì„¸ìš”"
+MsgBox "¼ıÀÚ¸¸ ÀÔ·ÂÇÏ¼¼¿ä"
 
 KeyAscii = 0
 
